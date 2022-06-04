@@ -21,7 +21,7 @@ function newGrid() {
         const container = document.querySelector(".container");
         container.appendChild(newDiv);
     }
-    grid.addEventListener("mouseover", function(event) {
+    grid.addEventListener("pointerover", function(event) {
     event.target.classList.replace("preHover","postHover");
     return;
 });
