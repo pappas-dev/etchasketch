@@ -1,9 +1,9 @@
 function newGrid() {
-    let gridSize = prompt('What size grid do you want to generate?');
+    let gridSize = prompt('Pick a grid size between 1-100.');
     let input = Number(gridSize);
-    if (input > 100) {
+    if (input > 100 || input < 0) {
         alert(`Please select a number 1 - 100.`)
-        newGrid();
+        return;
     }
     const grid = document.querySelector("div");
     grid.innerHTML = "";
@@ -23,9 +23,11 @@ function newGrid() {
     }
     grid.addEventListener("mouseover", function(event) {
     event.target.classList.replace("preHover","postHover");
+    return;
 });
 }
 
 function reset() {
     location.reload();
+    return;
 }
