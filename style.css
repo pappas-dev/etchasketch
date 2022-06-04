@@ -53,7 +53,7 @@ footer {
     display: flex;
     flex-shrink: 0;
     margin-top: auto;
-    padding: 0 10px;
+    padding: 0 20px;
     text-align: center;
 }
 button {
